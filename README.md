@@ -6,8 +6,7 @@
 
 本页网站 = 讲稿。`src/App.tsx` 里四张卡片是故意复制粘贴的，用来演示 PR 上的 bot 会不会叫停。
 
-仓库：https://github.com/franksun001/ai-pr-review-demo  
-演示 PR：https://github.com/franksun001/ai-pr-review-demo/pull/1
+仓库：https://github.com/franksun001/coderabbit-demo
 
 ## 本地预览
 
