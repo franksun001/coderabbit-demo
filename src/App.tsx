@@ -83,7 +83,7 @@ export default function App() {
           ]}
         />
 
-        {/* <section className='section' id='test'>
+        <section className='section' id='test'>
           <h2>6. 测试区块</h2>
           <p className='section-intro'>仅用于开 PR 看审查，没有新的分享内容。</p>
           <div className='topic-card'>
@@ -96,7 +96,7 @@ export default function App() {
               <li>占位三项</li>
             </ul>
           </div>
-        </section> */}
+        </section>
       </main>
 
       <footer className='footer'>
