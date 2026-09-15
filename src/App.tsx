@@ -82,6 +82,20 @@ export default function App() {
             "Resolve conversation：不采纳这条建议",
           ]}
         />
+        <section className='section' id='test'>
+          <h2>6. 测试区块</h2>
+          <p className='section-intro'>仅用于开 PR 看审查，没有新的分享内容。</p>
+          <div className='topic-card'>
+            <div className='topic-card__badge'>测试</div>
+            <h3 className='topic-card__title'>占位标题</h3>
+            <p className='topic-card__body'>占位说明。改完可以删掉这一节。</p>
+            <ul className='topic-card__list'>
+              <li>占位一项</li>
+              <li>占位二项</li>
+              <li>占位三项</li>
+            </ul>
+          </div>
+        </section>
 
       </main>
 
