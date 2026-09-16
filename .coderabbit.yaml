@@ -2,7 +2,7 @@
 language: "zh-CN"
 reviews:
   profile: "assertive"
-  request_changes_workflow: false
+  request_changes_workflow: true
   high_level_summary: true
   poem: false
   review_status: true
@@ -17,5 +17,21 @@ reviews:
         a shared React component. Name a concrete file path and props.
         Skip import order, trailing commas, and pure style nits.
         Do not praise without an actionable suggestion.
+  pre_merge_checks:
+    custom_checks:
+      - name: "Extract shared UI component"
+        mode: "error"
+        instructions: |
+          Fail if any file under src/ copy-pastes the same JSX card or section
+          layout 2 or more times (for example repeating topic-card,
+          topic-card__badge, topic-card__title, topic-card__body,
+          topic-card__list, or an equivalent card structure) instead of using
+          a shared React component.
+
+          Pass if the repeated card/section UI is rendered through a shared
+          component such as src/components/TopicSection.tsx, or if the PR
+          does not introduce duplicated card/section markup.
+
+          Ignore formatting, import order, and CSS-only changes.
 chat:
   auto_reply: true
