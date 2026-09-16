@@ -82,6 +82,15 @@ export default function App() {
             "Resolve conversation：不采纳这条建议",
           ]}
         />
+        <TopicSection
+          id='test'
+          heading='6. 测试区块'
+          intro='仅用于开 PR 看审查，没有新的分享内容。'
+          badge='测试'
+          cardTitle='占位标题'
+          body='占位说明。改完可以删掉这一节。'
+          items={["占位一项", "占位二项", "占位三项"]}
+        />
       </main>
 
       <footer className='footer'>
